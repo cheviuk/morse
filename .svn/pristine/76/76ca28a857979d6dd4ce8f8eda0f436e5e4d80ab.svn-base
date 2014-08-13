@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>morsetranslator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<!-- jquery ui -->
+	<link type="text/css" href="jqueryui/css/dark-hive/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+	<script type="text/javascript" src="jqueryui/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.21.custom.min.js"></script>
+    
+	<script type="application/dart" src="morsetranslator.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </head>
+  <body>
+    <div id="loading">loading</div>
+    <!------------------------------------------------------------------------------------>
+  	<div id="wrapper">
+  	<div id="header"><h1>.... ____ . ._ _.. . ._. </h1></div> <!-- header and -->
+  	<div id="left">left column</div><!-- left end -->
+  	<div id="center">
+  		<div id="patterns">
+	  		<input type="text" id="dotPattern" value="." /> - dot
+		    <br/>
+		    <input type="text" id="dashPattern" value="_" /> - dash
+		    <br/>
+	    </div><!-- patterns end -->
+	    type:
+	    <select id="type">
+	    	<option>TEXTTOMORSE</option>
+	    	<option>MORSETOTEXT</option>
+	    </select> 
+	    <br>
+	    
+	    lang: 
+	    <select id="lang">
+	    	<option>ru</option>
+	    	<option>eng</option>
+	    </select>
+	    <br>
+	    <textarea id="text"></textarea>
+	    <br/>
+	    <textarea id="result"></textarea>
+	    <button id="translate">translate</button>
+  	</div><!-- center end -->
+  	<div id="right">right column</div><!-- right end -->
+	<div id="spacer"></div><!-- spacer end -->
+	</div><!-- wrapper end -->
+	<div id="footer">textoffooter</div> <!-- footer end -->
+	<script>
+	// jquery ui
+	
+	$("#translate").button();
+	</script>
+  </body>
+</html>
